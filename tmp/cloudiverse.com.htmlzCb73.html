@@ -1,0 +1,105 @@
+<html>
+<head>
+  	<link rel='stylesheet' href="application.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1>
+      <img src="logoweb.png">
+      <br/>
+      cloudiverse
+    </h1>
+
+    <div class="actions">
+      <div class="left">
+        <a href="#" class="upload-action js-show-uploader">Upload</a>
+
+        <form id="upload-form" action="/uploads" method="post" autocomplete="off" enctype='multipart/form-data'>
+          <div class='upload-wrapper js-file-uploader'>
+            <div class='uploader-image'></div>
+            <input id="upload-input" type="file" class="upload-file" name="myfile">
+          </div>
+
+          <div class="upload-submit-wrapper js-upload-submit">
+            <div class="upload-submit-image"></div>
+            <input type="submit" class="submit-file js-submit-file" value="Upload">
+            <div class="submit-filename js-submit-filename">
+            </div>
+          </div>
+        </form>
+
+        <div class="clearfix"></div>
+      </div>
+      <div class="right">
+        <a href="#" class="download-action">Download</a>
+		<div class="downloadTableDiv" style="visibility:hidden;">
+			<table class="downloadTable">
+				<tr>
+					<td class="tableTitle">Available Files</td>
+				</tr>
+				<tr class="tableRow">
+					<td class="tableEntry">test.txt</td>
+					<td class="tableEntry" style="background-image:url('orsq.png');"><a href="#" style="text-decoration: none;">Select</a></td>
+				</tr>
+				<tr class="tableRow">
+					<td class="tableEntry">test2.txt</td>
+					<td class="tableEntry" style="background-image:url('orsq.png');"><a href="#" style="text-decoration:none;">Select</a></td>
+				</tr>
+			</table>
+		</div>
+      </div>
+      <div class="clearfix"></div>
+
+<!--       <a href="#" class="upload-action" style="margin-right: 80px;">Upload</a>
+      <a href="#" class="download-action">Download</a> -->
+    </div>
+
+    <div class="progress-info js-upload-progress">
+      <div class="progress-wrapper">
+        <img src="orcircle.png" class="progress-dot first">
+        <img src="greycirc.png" class="progress-dot second">
+        <img src="greycirc.png" class="progress-dot third">
+        <progress id='p' max='100' value='0'><span>0</span>% played</progress>
+      </div>
+      <br/>
+
+      <div class='progress-item'>
+        <h2>Submitting</h2>
+        <img src="circle.png">
+      </div>
+      <div class='progress-item pending second'>
+        <h2>Split & Encrypt</h2>
+        <img src="split.png">
+      </div>
+      <div class='progress-item pending third'>
+        <h2>Uploaded</h2>
+        <img src="uploaded.png">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+
+<!--     <div class="progress-info">
+      <div class='progress-item'>
+        <h2>Assembling</h2>
+      </div>
+      <div class='progress-item'>
+        <h2>Merging</h2>
+      </div>
+      <div class='progress-item'>
+        <h2>Done</h2>
+      </div>
+    </div>
+    <div class="clearfix"></div> -->
+  </div>
+
+  <!-- We gots some FOUT! -->
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="application.js"></script>
+  <script type="text/javascript" src="download.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/uux7waz.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</body>
+</html>
+
